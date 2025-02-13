@@ -9,7 +9,7 @@ const apiKey = 'cb6538f8a8fc4dflbe492634250201';
 
 async function getWeatherDataFetch(location) {
     try {
-        const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=cb6538f8a8fc4df1be492634250201&q=${location}&aqi=yes`);
+        const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=cb6538f8a8fc4df1be492634250201&q=${location}&aqi=yes`);
         if (!response.ok) {
             throw new Error('Error occured');
         }
